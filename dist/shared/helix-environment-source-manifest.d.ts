@@ -5,7 +5,7 @@ export declare const HELIX_ENVIRONMENT_SOURCE_MANIFEST_SCHEMA: "helix.environmen
 export declare const HELIX_ENVIRONMENT_SOURCE_HEARTBEAT_SCHEMA: "helix.environment_source_heartbeat.v1";
 export type HelixEnvironmentSourceModality = "environment_state" | "environment_affordance" | "procedure_graph" | "simulation_stream" | "visual_frame" | "audio_transcript";
 export type HelixEnvironmentSnapshotSection = "actor_state" | "inventory_state" | "object_state" | "local_map" | "chunk_snapshot_summary" | "focus" | "affordances" | "domain_specific";
-export type HelixEnvironmentManifestProbeType = "actor_status" | "nearby_entities" | "route_feasibility" | "reachability" | "line_of_sight" | "container_freshness" | "crop_state" | "hazard_check" | "inventory_check" | "local_map_summary" | "spatial_region" | "perception_snapshot" | "registry_fact" | "recipe_fact";
+export type HelixEnvironmentManifestProbeType = "actor_status" | "nearby_entities" | "route_feasibility" | "reachability" | "line_of_sight" | "container_freshness" | "crop_state" | "hazard_check" | "inventory_check" | "local_map_summary" | "spatial_region" | "companion_poststate" | "companion_region" | "perception_snapshot" | "registry_fact" | "recipe_fact";
 export type HelixEnvironmentForbiddenProbeType = "move_actor" | "use_item" | "take_item" | "place_block" | "break_block" | "attack_entity" | "open_container";
 export type HelixEnvironmentSourceManifest = {
     schema: typeof HELIX_ENVIRONMENT_SOURCE_MANIFEST_SCHEMA;
@@ -98,7 +98,7 @@ export declare const helixEnvironmentSourceManifestSchema: z.ZodObject<{
     protocol_version: z.ZodString;
     modalities: z.ZodArray<z.ZodEnum<["environment_state", "environment_affordance", "procedure_graph", "simulation_stream", "visual_frame", "audio_transcript"]>, "many">;
     supported_snapshot_sections: z.ZodArray<z.ZodEnum<["actor_state", "inventory_state", "object_state", "local_map", "chunk_snapshot_summary", "focus", "affordances", "domain_specific"]>, "many">;
-    supported_probe_types: z.ZodArray<z.ZodEnum<["actor_status", "nearby_entities", "route_feasibility", "reachability", "line_of_sight", "container_freshness", "crop_state", "hazard_check", "inventory_check", "local_map_summary", "spatial_region", "perception_snapshot", "registry_fact", "recipe_fact"]>, "many">;
+    supported_probe_types: z.ZodArray<z.ZodEnum<["actor_status", "nearby_entities", "route_feasibility", "reachability", "line_of_sight", "container_freshness", "crop_state", "hazard_check", "inventory_check", "local_map_summary", "spatial_region", "companion_poststate", "companion_region", "perception_snapshot", "registry_fact", "recipe_fact"]>, "many">;
     forbidden_probe_types: z.ZodArray<z.ZodEnum<["move_actor", "use_item", "take_item", "place_block", "break_block", "attack_entity", "open_container"]>, "many">;
     snapshot_policy: z.ZodObject<{
         baseline_interval_ms: z.ZodNumber;
@@ -183,7 +183,7 @@ export declare const helixEnvironmentSourceManifestSchema: z.ZodObject<{
     protocol_version: string;
     modalities: ("environment_state" | "environment_affordance" | "procedure_graph" | "simulation_stream" | "visual_frame" | "audio_transcript")[];
     supported_snapshot_sections: ("actor_state" | "inventory_state" | "object_state" | "local_map" | "chunk_snapshot_summary" | "focus" | "affordances" | "domain_specific")[];
-    supported_probe_types: ("actor_status" | "nearby_entities" | "route_feasibility" | "reachability" | "line_of_sight" | "container_freshness" | "crop_state" | "hazard_check" | "inventory_check" | "local_map_summary" | "spatial_region" | "perception_snapshot" | "registry_fact" | "recipe_fact")[];
+    supported_probe_types: ("actor_status" | "nearby_entities" | "route_feasibility" | "reachability" | "line_of_sight" | "container_freshness" | "crop_state" | "hazard_check" | "inventory_check" | "local_map_summary" | "spatial_region" | "companion_poststate" | "companion_region" | "perception_snapshot" | "registry_fact" | "recipe_fact")[];
     forbidden_probe_types: ("move_actor" | "use_item" | "take_item" | "place_block" | "break_block" | "attack_entity" | "open_container")[];
     snapshot_policy: {
         baseline_interval_ms: number;
@@ -225,7 +225,7 @@ export declare const helixEnvironmentSourceManifestSchema: z.ZodObject<{
     protocol_version: string;
     modalities: ("environment_state" | "environment_affordance" | "procedure_graph" | "simulation_stream" | "visual_frame" | "audio_transcript")[];
     supported_snapshot_sections: ("actor_state" | "inventory_state" | "object_state" | "local_map" | "chunk_snapshot_summary" | "focus" | "affordances" | "domain_specific")[];
-    supported_probe_types: ("actor_status" | "nearby_entities" | "route_feasibility" | "reachability" | "line_of_sight" | "container_freshness" | "crop_state" | "hazard_check" | "inventory_check" | "local_map_summary" | "spatial_region" | "perception_snapshot" | "registry_fact" | "recipe_fact")[];
+    supported_probe_types: ("actor_status" | "nearby_entities" | "route_feasibility" | "reachability" | "line_of_sight" | "container_freshness" | "crop_state" | "hazard_check" | "inventory_check" | "local_map_summary" | "spatial_region" | "companion_poststate" | "companion_region" | "perception_snapshot" | "registry_fact" | "recipe_fact")[];
     forbidden_probe_types: ("move_actor" | "use_item" | "take_item" | "place_block" | "break_block" | "attack_entity" | "open_container")[];
     snapshot_policy: {
         baseline_interval_ms: number;

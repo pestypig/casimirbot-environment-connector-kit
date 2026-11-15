@@ -5,7 +5,7 @@ export const HELIX_ENVIRONMENT_SOURCE_MANIFEST_SCHEMA = "helix.environment_sourc
 export const HELIX_ENVIRONMENT_SOURCE_HEARTBEAT_SCHEMA = "helix.environment_source_heartbeat.v1" as const;
 export type HelixEnvironmentSourceModality = "environment_state" | "environment_affordance" | "procedure_graph" | "simulation_stream" | "visual_frame" | "audio_transcript";
 export type HelixEnvironmentSnapshotSection = "actor_state" | "inventory_state" | "object_state" | "local_map" | "chunk_snapshot_summary" | "focus" | "affordances" | "domain_specific";
-export type HelixEnvironmentManifestProbeType = "actor_status" | "nearby_entities" | "route_feasibility" | "reachability" | "line_of_sight" | "container_freshness" | "crop_state" | "hazard_check" | "inventory_check" | "local_map_summary" | "spatial_region" | "perception_snapshot" | "registry_fact" | "recipe_fact";
+export type HelixEnvironmentManifestProbeType = "actor_status" | "nearby_entities" | "route_feasibility" | "reachability" | "line_of_sight" | "container_freshness" | "crop_state" | "hazard_check" | "inventory_check" | "local_map_summary" | "spatial_region" | "companion_poststate" | "companion_region" | "perception_snapshot" | "registry_fact" | "recipe_fact";
 export type HelixEnvironmentForbiddenProbeType = "move_actor" | "use_item" | "take_item" | "place_block" | "break_block" | "attack_entity" | "open_container";
 export type HelixEnvironmentSourceManifest = {
     schema: typeof HELIX_ENVIRONMENT_SOURCE_MANIFEST_SCHEMA;
@@ -130,6 +130,8 @@ export const helixEnvironmentSourceManifestSchema = z.object({
         "inventory_check",
         "local_map_summary",
         "spatial_region",
+        "companion_poststate",
+        "companion_region",
         "perception_snapshot",
         "registry_fact",
         "recipe_fact",

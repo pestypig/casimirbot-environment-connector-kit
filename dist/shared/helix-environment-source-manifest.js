@@ -46,6 +46,8 @@ export const helixEnvironmentSourceManifestSchema = z.object({
         "inventory_check",
         "local_map_summary",
         "spatial_region",
+        "companion_poststate",
+        "companion_region",
         "perception_snapshot",
         "registry_fact",
         "recipe_fact",

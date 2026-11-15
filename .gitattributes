@@ -1,0 +1,4 @@
+# Preserve the byte format used by the selected-source generator and TypeScript.
+src/** text eol=lf
+dist/** text eol=lf
+java/** text eol=lf

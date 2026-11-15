@@ -1,0 +1,215 @@
+{
+  "observed_at": "2026-11-15T07:56:50.967Z",
+  "repository": "casimirbot-environment-connector-kit",
+  "public_base_head": "cee475a47f9bd593bf9bea1bda4df64aad716035",
+  "selected_exports": 43,
+  "generated_source_files": 11,
+  "changes": [
+    {
+      "path": "src/shared/helix-environment-connector.ts",
+      "public_sha256": "47bbebd963e0c7e73263326df42469ef534551e64081d77f1c7c6e99838ed682",
+      "candidate_sha256": "2b2dd9c005c0a332b0948f46efd0a0f999aceb306f70002005e7aa99102a3f65"
+    },
+    {
+      "path": "src/shared/helix-environment-source-manifest.ts",
+      "public_sha256": "6dd952167914e2a63facd2132b842728d4126f945754439357c29a7dde3c723e",
+      "candidate_sha256": "28334cf0e41a59aa5505929b61b91aa5d2ce24ba4162d15fe7767377b600ad78"
+    },
+    {
+      "path": "dist/shared/helix-environment-connector.d.ts",
+      "public_sha256": "6986f1917204b4128435a10005b042452ee18eb5693f4d8f1348aec91e6d8fdc",
+      "candidate_sha256": "52c428ca5732301ec034b3009a7cd6df80318fc8ef5a15e921c4afb1d95d18bf"
+    },
+    {
+      "path": "dist/shared/helix-environment-connector.js",
+      "public_sha256": "dc25071eef62fae063f43aacb1a9d68c9f26b2c3401cc11412eb99ccdba273b2",
+      "candidate_sha256": "ffb9f79dacdf2eaea6b4c2c62721bb0c9f346eafd47d3762204907e113f3fc8f"
+    },
+    {
+      "path": "dist/shared/helix-environment-source-manifest.d.ts",
+      "public_sha256": "96ae19534d495be5a6a38d24f8759f44fb9ff35f0e0d27078c33f37ddfaed76c",
+      "candidate_sha256": "592168558d37fb60676216966514ab7f98c4124cf0bcb240c7262521f654cb38"
+    },
+    {
+      "path": "dist/shared/helix-environment-source-manifest.js",
+      "public_sha256": "332da091c2b2af6ea0beeed46773b42267034c28fcf8c75dc405872392e8313d",
+      "candidate_sha256": "c12c8b0c38857a047cf177276b0a5080fa0cf1b4db2641bbc75cf8422234cc03"
+    }
+  ],
+  "review": "Two selected source changes only: optional bounded identifier on observation, and two read-only probe enum values. Generated JS/declarations are reproduced by the unchanged selected-closure compiler. Existing MIT license, dependency notices and package exports retained. No authority checks or endpoint controls added.",
+  "canonical_inputs": {
+    "connectors/environment/conformance/mock-helix.ts": "3d5cc7fc13610c0cd22bf04f4ca1928ae504865801527ad5cf45f65993109f8f",
+    "connectors/environment/examples/synthetic/connector.ts": "0be163a3ff71d2d971906998a1f4233210131363ee4b4810eea0aa412cff725a",
+    "connectors/environment/examples/system-clock/connector.ts": "7862e193c8697d5321e1d5e01de9e0b289995cff02a12b3fb550de6d00547ebd",
+    "connectors/environment/sdk/java/src/main/java/com/casimirbot/helix/environment/HelixConnectorClient.java": "ba0488818a994053c342606aea73f72d820a6335c7ede405cea76a41bfd0e9d1",
+    "connectors/environment/sdk/typescript/index.ts": "584ca91277a1538e43baa683a7ffb651ea3455a96884c33c3692563a1261d16b",
+    "connectors/environment/templates/read-only/connector.ts": "c260d93dd5b9292bd33fd1607bcd7ab900b2f1eed42054c6d1f821a7d22c164f",
+    "docs/work-packets/eh-g8-cfp1-c10-public-symbol-allowlist-v1.csv": "21c903ffacae7691db098e3cb2cb4bf218696e95bde6a1053d3421e002b63d0f",
+    "scripts/c10/build-local-kit.mjs": "10b840e90f4e5fd11efd5e3b99c4dbc7094c30691c38bde9f3f615b46499d880",
+    "shared/helix-environment-connector-conformance.ts": "67b5d25ea022f265425be3b2022116d6ae6d3f099d22ca48e3d7114f68dbd843",
+    "shared/helix-environment-connector.ts": "e87d9965fd8d276f66096799c18fddba5fa4765d84c5ce340036dcb6524bf401",
+    "shared/helix-environment-sensor-scope.ts": "64dbbb38ccd055366b6a681df919e454d2378e6d2b83c54a4ff537f937ffd4e1",
+    "shared/helix-environment-source-manifest.ts": "2d0a8f1459504e621b28cfc8ad0af9817c739b6ab877b0fff4c8c00f8ebd08c2",
+    "shared/helix-environment-state-snapshot.ts": "319345841ee89b1c57404364a122c00960a49c6eb6632c62cb62d823608b30df"
+  },
+  "limits": [
+    "Local consumer and schema evidence only; no native endpoint or independent-human acceptance.",
+    "Unpublished proposal from dirty canonical inputs; final freeze and public readback remain required."
+  ],
+  "published": false,
+  "line_ending_correction": {
+    "reason": "18 compiled files in a Windows checkout changed CRLF on clean rebuild; all differences were proven line endings only. Pin selected source/dist/Java checkout to LF.",
+    "files": [
+      {
+        "path": "src/connectors/environment/conformance/mock-helix.ts",
+        "before_sha256": "d831dbbd8f782e7772337651b49cb19938dc8d2e955597dfb8536454507a4173",
+        "after_sha256": "3c6a7c2ef42b4237af1252f24f9f89b1cf432a2b29974b73f6ac70887837363c"
+      },
+      {
+        "path": "src/connectors/environment/contract/v1/index.ts",
+        "before_sha256": "a1f7e3b0bdda04d957e2380cf7b7a451420e24e80a2e2b76176b06072daa7636",
+        "after_sha256": "506173b1e69f28dcf101d6d981279afa92b5c0f6341d48de1b8a84b0d4f17224"
+      },
+      {
+        "path": "src/connectors/environment/examples/synthetic/connector.ts",
+        "before_sha256": "635658c7dd08bea6f2efbe46b4a9240ad14b5236ac373ca4b2fc3d5272d077ba",
+        "after_sha256": "0cd4681355070e352650342b53acc659bed87d066250a4cc6f10e14d393be9bc"
+      },
+      {
+        "path": "src/connectors/environment/examples/system-clock/connector.ts",
+        "before_sha256": "1b5b62c8748e1bf8611ad9c0c7629b59b5261f19513c18004e81c24a7f39aa5d",
+        "after_sha256": "4cf4e4fb634526234652794b535df21764b8d1ac412bae9b00d9ae5d5ad1104e"
+      },
+      {
+        "path": "src/connectors/environment/sdk/typescript/index.ts",
+        "before_sha256": "a152076312e4f7f3efd44a861cbee0091232275f398d53ae42dba0ba781102c9",
+        "after_sha256": "ae025ca54923a6b5833eee148d8a03df0f4c04ee3c604a5111d812e5c59c9571"
+      },
+      {
+        "path": "src/connectors/environment/templates/read-only/connector.ts",
+        "before_sha256": "32923264ca7fba2125149d4281ad6f346fb200b0afb3cf5c5df5058f205093db",
+        "after_sha256": "88817cb1be9efafdf100f1ff80925b382e7ac8c761881482df6f688e3a08fdb0"
+      },
+      {
+        "path": "src/shared/helix-environment-connector-conformance.ts",
+        "before_sha256": "c00617367c4166f50591d7a5696a9f6598999d9cb0aad02384cefd06661947cb",
+        "after_sha256": "a666767e5f53dec82bbcd1ae92ba7e2c019c4df35e4eab8b7fd0cd3e4410bc1d"
+      },
+      {
+        "path": "src/shared/helix-environment-sensor-scope.ts",
+        "before_sha256": "1517eec6482b7da40c6748124ad826b0872a7635a996474ca64beafb02a3730d",
+        "after_sha256": "3b69719d6c10f2365bcb8bae508dbed73ff0e9a75fd6a05f25f8da920834d4b9"
+      },
+      {
+        "path": "src/shared/helix-environment-state-snapshot.ts",
+        "before_sha256": "425cc32135c6dee9b76c24b0926c4d6df484bc2577575580c73be34169ec3a1c",
+        "after_sha256": "f09c7ea3ed8221a3a6c52dcc678dc67256ed8c464a0068393a2ef609b49af710"
+      },
+      {
+        "path": "dist/connectors/environment/conformance/mock-helix.d.ts",
+        "before_sha256": "83e365fe9808eb8b4ad58f5a16a7d7acadd07e6be44515cd271071d5762e3069",
+        "after_sha256": "44b0346dff6f1e888ff357fae2ce5adb922b63385bc10e2d8e6cad720fccee96"
+      },
+      {
+        "path": "dist/connectors/environment/conformance/mock-helix.js",
+        "before_sha256": "dbc21d9fe7061df84a2e198696d54a2f1771a92fd6fb99ea65017b9f7b11f8e2",
+        "after_sha256": "fcfa33e1ddf1fd56df085ce6f3412713f98768b12cbdd2fb8c1caa3eb5ad33be"
+      },
+      {
+        "path": "dist/connectors/environment/contract/v1/index.d.ts",
+        "before_sha256": "a1f7e3b0bdda04d957e2380cf7b7a451420e24e80a2e2b76176b06072daa7636",
+        "after_sha256": "506173b1e69f28dcf101d6d981279afa92b5c0f6341d48de1b8a84b0d4f17224"
+      },
+      {
+        "path": "dist/connectors/environment/contract/v1/index.js",
+        "before_sha256": "dc3874cd8d978712b0bc32d40a0658fee70391e8b6470d066c50aa83c4489677",
+        "after_sha256": "a645f04e17207f73c6e7be0bc0ec0f730d0d3bcb99c9e88004ffa0198d874f51"
+      },
+      {
+        "path": "dist/connectors/environment/examples/synthetic/connector.d.ts",
+        "before_sha256": "13d323387d83534625bec3d14ad465c1f8bcc4c8fb66533c73d221cd674633dc",
+        "after_sha256": "91b753db8f34f9673f5de8c5ca2eea2e971ba1449f2ebb76772031500af4257e"
+      },
+      {
+        "path": "dist/connectors/environment/examples/synthetic/connector.js",
+        "before_sha256": "6b893498773b48fcf6a432663a5490f518c706464b01370d6903927a197fec35",
+        "after_sha256": "297595117a91f6ee838051523f291482048df24874a1794a28deb0b034ed57be"
+      },
+      {
+        "path": "dist/connectors/environment/examples/system-clock/connector.d.ts",
+        "before_sha256": "5b466d5dcacaa6bfba2d9d329803251c78b9059c50282d0a5662ade1a90de20e",
+        "after_sha256": "b63eec6dbc11bff37063bb1265f84cc063ee744eb1185be9b4ae0434624eb153"
+      },
+      {
+        "path": "dist/connectors/environment/examples/system-clock/connector.js",
+        "before_sha256": "154716c8f36ef33f6e46d31992d93793065631d5c3bf435a47dd6bb0f91a04c5",
+        "after_sha256": "14d432c2e5d4c9d61a071aad6acea20375ba0e14b6623dc20b7c9fc5dfa6b91a"
+      },
+      {
+        "path": "dist/connectors/environment/sdk/typescript/index.d.ts",
+        "before_sha256": "ae0009124b84fdf38428c259de80c511f18ad402ccd9b394123942a839b5e80c",
+        "after_sha256": "b1e7d25de60831c8d3cfb8563c60ed43a7c5740badbc778d606a58648f9faf3c"
+      },
+      {
+        "path": "dist/connectors/environment/sdk/typescript/index.js",
+        "before_sha256": "adb58e88624237d27547f25dc8795e251ca6da7f5dce546a133de88b85c3d475",
+        "after_sha256": "1151f2fc784a9c977dedc0f27aed2ada48568325bd970edbdad0181482129943"
+      },
+      {
+        "path": "dist/connectors/environment/templates/read-only/connector.d.ts",
+        "before_sha256": "d88412238296652ddb3a9ac9528d02340001661e3837a98c99d758c5c7647ff7",
+        "after_sha256": "c0256c117535489795062155b4cca7235bc59a2f7a4c1737b9510a6fbf79ccaa"
+      },
+      {
+        "path": "dist/connectors/environment/templates/read-only/connector.js",
+        "before_sha256": "bd5f19eac7aa2aa9c4fe98a1ed7290edc0de412e23812def9c0184733812fa22",
+        "after_sha256": "343e73d5527f8c562aa71294b6bdb15a10216e695bb36ab6076cbb84e21a14ab"
+      },
+      {
+        "path": "dist/shared/helix-environment-connector-conformance.d.ts",
+        "before_sha256": "89d214b6e8b367c25166110770f64f51805ac05bfb5d0d32a1e352724738ac76",
+        "after_sha256": "2c22a6c4deed0040eb34e56a09071529ee384bb71af4f6416c2cea867f6b59b1"
+      },
+      {
+        "path": "dist/shared/helix-environment-connector-conformance.js",
+        "before_sha256": "33a96ff1c79010a74a0421fcaf8ac70c9e58fc7c8ec7dac0c73b847e3b1fb453",
+        "after_sha256": "eeb8ce84b0a468157ec5d8016cd703a0f621bb75f4b279ab223ae0fced1b1b63"
+      },
+      {
+        "path": "dist/shared/helix-environment-sensor-scope.d.ts",
+        "before_sha256": "bdb2c062a623355a17ef94ee97a78e6785abb7b5f638f1cc239929961c2bf554",
+        "after_sha256": "8404ec8ec608e7a855e9235291d2bec06f4a01fe8f041aa11c4169719c6e6692"
+      },
+      {
+        "path": "dist/shared/helix-environment-sensor-scope.js",
+        "before_sha256": "ee78dd234a253354d3835e478a397eddd00ca0ab6f906da484594e7fa291d2da",
+        "after_sha256": "2dfc88d8b9fa19a71d2b9ec7c337377276a157fea0e16dadc91648f61ac43414"
+      },
+      {
+        "path": "dist/shared/helix-environment-state-snapshot.d.ts",
+        "before_sha256": "425cc32135c6dee9b76c24b0926c4d6df484bc2577575580c73be34169ec3a1c",
+        "after_sha256": "f09c7ea3ed8221a3a6c52dcc678dc67256ed8c464a0068393a2ef609b49af710"
+      },
+      {
+        "path": "dist/shared/helix-environment-state-snapshot.js",
+        "before_sha256": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "after_sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      {
+        "path": "java/com/casimirbot/helix/environment/HelixConnectorClient.java",
+        "before_sha256": "194badd9c66103f610f395610b606eafa12b19bd8ef433badc3c57f5ba3a0074",
+        "after_sha256": "ba0488818a994053c342606aea73f72d820a6335c7ede405cea76a41bfd0e9d1"
+      }
+    ],
+    "attribute_file": ".gitattributes",
+    "failed_receipt": "connector-kit-r384-review-consumer.json"
+  },
+  "validation": {
+    "clean_consumer": "PASS",
+    "runtime_checks": 10,
+    "focused_schema_checks": 8,
+    "byte_identical_rebuilt_files": 22,
+    "archive_sha256": "097f869a5693bcd39b092efabda3c8a67835d378c15860d96133cccd30e0f086",
+    "first_attempt": "18 compiled files differed only by Windows checkout line endings; preserved failed receipt, added LF attributes, and passed in a fresh consumer directory."
+  }
+}

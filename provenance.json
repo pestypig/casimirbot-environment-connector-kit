@@ -56,15 +56,15 @@
     "docs/work-packets/eh-g8-cfp1-c10-public-symbol-allowlist-v1.csv": "21c903ffacae7691db098e3cb2cb4bf218696e95bde6a1053d3421e002b63d0f",
     "scripts/c10/build-local-kit.mjs": "10b840e90f4e5fd11efd5e3b99c4dbc7094c30691c38bde9f3f615b46499d880",
     "shared/helix-environment-connector-conformance.ts": "67b5d25ea022f265425be3b2022116d6ae6d3f099d22ca48e3d7114f68dbd843",
-    "shared/helix-environment-connector.ts": "ceedbf6a1350eff93b9753f3ea50204afe73549001815a124e9c460f6238609a",
+    "shared/helix-environment-connector.ts": "e87d9965fd8d276f66096799c18fddba5fa4765d84c5ce340036dcb6524bf401",
     "shared/helix-environment-sensor-scope.ts": "64dbbb38ccd055366b6a681df919e454d2378e6d2b83c54a4ff537f937ffd4e1",
-    "shared/helix-environment-source-manifest.ts": "ba65653c7ed52af0c810c04b5dcb590bb8b4f1de92a8933bf3d6fb50180015f2",
-    "shared/helix-environment-state-snapshot.ts": "796a3f4adccfec8b351fb4b5c0f9088788802dd2f1fe7775c538d76e6ee959c3"
+    "shared/helix-environment-source-manifest.ts": "2d0a8f1459504e621b28cfc8ad0af9817c739b6ab877b0fff4c8c00f8ebd08c2",
+    "shared/helix-environment-state-snapshot.ts": "319345841ee89b1c57404364a122c00960a49c6eb6632c62cb62d823608b30df"
   },
   "generatedSource": {
-    "shared/helix-environment-connector.ts": "71f3c25dde701f455e401fcac5511e7da1c6507613a4d78544e7fe790a9ef07e",
+    "shared/helix-environment-connector.ts": "2b2dd9c005c0a332b0948f46efd0a0f999aceb306f70002005e7aa99102a3f65",
     "shared/helix-environment-connector-conformance.ts": "a666767e5f53dec82bbcd1ae92ba7e2c019c4df35e4eab8b7fd0cd3e4410bc1d",
-    "shared/helix-environment-source-manifest.ts": "84716a0babec2ad0d68c8971ae39425cc648d5a85ee3bc2fb60270ad863513c0",
+    "shared/helix-environment-source-manifest.ts": "28334cf0e41a59aa5505929b61b91aa5d2ce24ba4162d15fe7767377b600ad78",
     "shared/helix-environment-state-snapshot.ts": "f09c7ea3ed8221a3a6c52dcc678dc67256ed8c464a0068393a2ef609b49af710",
     "shared/helix-environment-sensor-scope.ts": "3b69719d6c10f2365bcb8bae508dbed73ff0e9a75fd6a05f25f8da920834d4b9",
     "connectors/environment/contract/v1/index.ts": "506173b1e69f28dcf101d6d981279afa92b5c0f6341d48de1b8a84b0d4f17224",
@@ -87,9 +87,16 @@
   },
   "sourcePreview": {
     "sourceFiles": 11,
-    "sourceInventoryHash": "a02e86994d672fa74395b79f08fd262d6118082e37bd6b39b6e1e76543bab47d",
-    "distInventoryHash": "3f7297ad762126f8e4a942c5113ab0f08e81bc4e11d046a4ce02107b7697f8f4",
+    "sourceInventoryHash": "1f0e74798df14234dc64ad231ef9e97e9ccdf80daf3d42ab238087b9430e6b46",
+    "distInventoryHash": "a9ab02f25c3d4f76ec3c1e52c6133b6673cbecff4028462eff0ffeeb361a575c",
     "javaInventoryHash": "12c03d81c5175ccf9269073813b86abb5a4e1279276e34e3be1535b4e8121e50",
     "npmRegistryPublication": false
+  },
+  "candidateReview": {
+    "status": "unpublished local proposal",
+    "canonicalHead": "2113d0e7547b018220da38d6adc4f36b5718fcd4",
+    "dirtySourceInputs": true,
+    "privateQualificationPackage": "R384",
+    "publicBaseHead": "cee475a47f9bd593bf9bea1bda4df64aad716035"
   }
 }

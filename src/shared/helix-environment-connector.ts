@@ -260,6 +260,7 @@ export const helixEnvironmentProbeObservationSchema = z
     .object({
     schema: z.literal(HELIX_ENVIRONMENT_PROBE_OBSERVATION_SCHEMA),
     probe_request_ref: identifierSchema,
+    environment_binding_ref: identifierSchema.optional(),
     probe_attempt_ref: identifierSchema.nullable(),
     capability_id: identifierSchema,
     capability_version: z.number().int().positive(),

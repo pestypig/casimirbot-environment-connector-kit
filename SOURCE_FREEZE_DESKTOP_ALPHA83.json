@@ -1,0 +1,278 @@
+{
+  "schema": "casimirbot.selected_source_freeze.v1",
+  "observed_at": "2026-11-15T09:12:14.155521+00:00",
+  "canonical_source_commit": "7e5414c4b2eaac794f8cb0a46bfa53570631c68a",
+  "release_tag": "desktop-v0.1.0-alpha.83",
+  "public_base_head": "cee475a47f9bd593bf9bea1bda4df64aad716035",
+  "scope": "Selected read-only connector kit; explicit build-time source transformations and generated JS/declarations retain their earlier review.",
+  "canonical_inputs": {
+    "connectors/environment/conformance/mock-helix.ts": "3d5cc7fc13610c0cd22bf04f4ca1928ae504865801527ad5cf45f65993109f8f",
+    "connectors/environment/examples/synthetic/connector.ts": "0be163a3ff71d2d971906998a1f4233210131363ee4b4810eea0aa412cff725a",
+    "connectors/environment/examples/system-clock/connector.ts": "7862e193c8697d5321e1d5e01de9e0b289995cff02a12b3fb550de6d00547ebd",
+    "connectors/environment/sdk/java/src/main/java/com/casimirbot/helix/environment/HelixConnectorClient.java": "ba0488818a994053c342606aea73f72d820a6335c7ede405cea76a41bfd0e9d1",
+    "connectors/environment/sdk/typescript/index.ts": "584ca91277a1538e43baa683a7ffb651ea3455a96884c33c3692563a1261d16b",
+    "connectors/environment/templates/read-only/connector.ts": "c260d93dd5b9292bd33fd1607bcd7ab900b2f1eed42054c6d1f821a7d22c164f",
+    "docs/work-packets/eh-g8-cfp1-c10-public-symbol-allowlist-v1.csv": "21c903ffacae7691db098e3cb2cb4bf218696e95bde6a1053d3421e002b63d0f",
+    "scripts/c10/build-local-kit.mjs": "10b840e90f4e5fd11efd5e3b99c4dbc7094c30691c38bde9f3f615b46499d880",
+    "shared/helix-environment-connector-conformance.ts": "67b5d25ea022f265425be3b2022116d6ae6d3f099d22ca48e3d7114f68dbd843",
+    "shared/helix-environment-connector.ts": "e87d9965fd8d276f66096799c18fddba5fa4765d84c5ce340036dcb6524bf401",
+    "shared/helix-environment-sensor-scope.ts": "64dbbb38ccd055366b6a681df919e454d2378e6d2b83c54a4ff537f937ffd4e1",
+    "shared/helix-environment-source-manifest.ts": "2d0a8f1459504e621b28cfc8ad0af9817c739b6ab877b0fff4c8c00f8ebd08c2",
+    "shared/helix-environment-state-snapshot.ts": "319345841ee89b1c57404364a122c00960a49c6eb6632c62cb62d823608b30df"
+  },
+  "verified_package_files_before_metadata_update": [
+    {
+      "path": "LICENSE",
+      "sha256": "bede7a68720c1de22878bc8dc299987ebf7db34c8d2b9abfce05d29f6807eb3f",
+      "qualified_archive_sha256": "bede7a68720c1de22878bc8dc299987ebf7db34c8d2b9abfce05d29f6807eb3f",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "java/com/casimirbot/helix/environment/HelixConnectorClient.java",
+      "sha256": "ba0488818a994053c342606aea73f72d820a6335c7ede405cea76a41bfd0e9d1",
+      "qualified_archive_sha256": "ba0488818a994053c342606aea73f72d820a6335c7ede405cea76a41bfd0e9d1",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/examples/synthetic/connector.js",
+      "sha256": "297595117a91f6ee838051523f291482048df24874a1794a28deb0b034ed57be",
+      "qualified_archive_sha256": "297595117a91f6ee838051523f291482048df24874a1794a28deb0b034ed57be",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/examples/system-clock/connector.js",
+      "sha256": "14d432c2e5d4c9d61a071aad6acea20375ba0e14b6623dc20b7c9fc5dfa6b91a",
+      "qualified_archive_sha256": "14d432c2e5d4c9d61a071aad6acea20375ba0e14b6623dc20b7c9fc5dfa6b91a",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/templates/read-only/connector.js",
+      "sha256": "343e73d5527f8c562aa71294b6bdb15a10216e695bb36ab6076cbb84e21a14ab",
+      "qualified_archive_sha256": "343e73d5527f8c562aa71294b6bdb15a10216e695bb36ab6076cbb84e21a14ab",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-connector-conformance.js",
+      "sha256": "eeb8ce84b0a468157ec5d8016cd703a0f621bb75f4b279ab223ae0fced1b1b63",
+      "qualified_archive_sha256": "eeb8ce84b0a468157ec5d8016cd703a0f621bb75f4b279ab223ae0fced1b1b63",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-connector.js",
+      "sha256": "ffb9f79dacdf2eaea6b4c2c62721bb0c9f346eafd47d3762204907e113f3fc8f",
+      "qualified_archive_sha256": "ffb9f79dacdf2eaea6b4c2c62721bb0c9f346eafd47d3762204907e113f3fc8f",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-sensor-scope.js",
+      "sha256": "2dfc88d8b9fa19a71d2b9ec7c337377276a157fea0e16dadc91648f61ac43414",
+      "qualified_archive_sha256": "2dfc88d8b9fa19a71d2b9ec7c337377276a157fea0e16dadc91648f61ac43414",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-source-manifest.js",
+      "sha256": "c12c8b0c38857a047cf177276b0a5080fa0cf1b4db2641bbc75cf8422234cc03",
+      "qualified_archive_sha256": "c12c8b0c38857a047cf177276b0a5080fa0cf1b4db2641bbc75cf8422234cc03",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-state-snapshot.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "qualified_archive_sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/contract/v1/index.js",
+      "sha256": "a645f04e17207f73c6e7be0bc0ec0f730d0d3bcb99c9e88004ffa0198d874f51",
+      "qualified_archive_sha256": "a645f04e17207f73c6e7be0bc0ec0f730d0d3bcb99c9e88004ffa0198d874f51",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/sdk/typescript/index.js",
+      "sha256": "1151f2fc784a9c977dedc0f27aed2ada48568325bd970edbdad0181482129943",
+      "qualified_archive_sha256": "1151f2fc784a9c977dedc0f27aed2ada48568325bd970edbdad0181482129943",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/conformance/mock-helix.js",
+      "sha256": "fcfa33e1ddf1fd56df085ce6f3412713f98768b12cbdd2fb8c1caa3eb5ad33be",
+      "qualified_archive_sha256": "fcfa33e1ddf1fd56df085ce6f3412713f98768b12cbdd2fb8c1caa3eb5ad33be",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "c8dd29dc38e02ef43d54bbdbf0d454e2590833c8f92aac9cef0a4bf191892c9a",
+      "qualified_archive_sha256": "c8dd29dc38e02ef43d54bbdbf0d454e2590833c8f92aac9cef0a4bf191892c9a",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "5e4e43042719a0c20637e6b6172261f73d6b5e5e00a3e765f701e601ca21802f",
+      "qualified_archive_sha256": "5e4e43042719a0c20637e6b6172261f73d6b5e5e00a3e765f701e601ca21802f",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "tsconfig.build.json",
+      "sha256": "df1fdc4df8ae06568db8fcf8419f0c239e8ecaa879b87f31e4a6d142f90e518c",
+      "qualified_archive_sha256": "df1fdc4df8ae06568db8fcf8419f0c239e8ecaa879b87f31e4a6d142f90e518c",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "1914b78aafcb43bec4aa02cb7f44db2a041f12b402bfbb143eb7aa2ab5ef78f8",
+      "qualified_archive_sha256": "4ec0c16c5ea8179ad62925909c6af058d0bc78821d6ad67bc1c506a5028ab93e",
+      "matches_qualified_archive": false
+    },
+    {
+      "path": "dist/connectors/environment/examples/synthetic/connector.d.ts",
+      "sha256": "91b753db8f34f9673f5de8c5ca2eea2e971ba1449f2ebb76772031500af4257e",
+      "qualified_archive_sha256": "91b753db8f34f9673f5de8c5ca2eea2e971ba1449f2ebb76772031500af4257e",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/examples/system-clock/connector.d.ts",
+      "sha256": "b63eec6dbc11bff37063bb1265f84cc063ee744eb1185be9b4ae0434624eb153",
+      "qualified_archive_sha256": "b63eec6dbc11bff37063bb1265f84cc063ee744eb1185be9b4ae0434624eb153",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/templates/read-only/connector.d.ts",
+      "sha256": "c0256c117535489795062155b4cca7235bc59a2f7a4c1737b9510a6fbf79ccaa",
+      "qualified_archive_sha256": "c0256c117535489795062155b4cca7235bc59a2f7a4c1737b9510a6fbf79ccaa",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/connectors/environment/examples/synthetic/connector.ts",
+      "sha256": "0cd4681355070e352650342b53acc659bed87d066250a4cc6f10e14d393be9bc",
+      "qualified_archive_sha256": "0cd4681355070e352650342b53acc659bed87d066250a4cc6f10e14d393be9bc",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/connectors/environment/examples/system-clock/connector.ts",
+      "sha256": "4cf4e4fb634526234652794b535df21764b8d1ac412bae9b00d9ae5d5ad1104e",
+      "qualified_archive_sha256": "4cf4e4fb634526234652794b535df21764b8d1ac412bae9b00d9ae5d5ad1104e",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/connectors/environment/templates/read-only/connector.ts",
+      "sha256": "88817cb1be9efafdf100f1ff80925b382e7ac8c761881482df6f688e3a08fdb0",
+      "qualified_archive_sha256": "88817cb1be9efafdf100f1ff80925b382e7ac8c761881482df6f688e3a08fdb0",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-connector-conformance.d.ts",
+      "sha256": "2c22a6c4deed0040eb34e56a09071529ee384bb71af4f6416c2cea867f6b59b1",
+      "qualified_archive_sha256": "2c22a6c4deed0040eb34e56a09071529ee384bb71af4f6416c2cea867f6b59b1",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/shared/helix-environment-connector-conformance.ts",
+      "sha256": "a666767e5f53dec82bbcd1ae92ba7e2c019c4df35e4eab8b7fd0cd3e4410bc1d",
+      "qualified_archive_sha256": "a666767e5f53dec82bbcd1ae92ba7e2c019c4df35e4eab8b7fd0cd3e4410bc1d",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-connector.d.ts",
+      "sha256": "52c428ca5732301ec034b3009a7cd6df80318fc8ef5a15e921c4afb1d95d18bf",
+      "qualified_archive_sha256": "52c428ca5732301ec034b3009a7cd6df80318fc8ef5a15e921c4afb1d95d18bf",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/shared/helix-environment-connector.ts",
+      "sha256": "2b2dd9c005c0a332b0948f46efd0a0f999aceb306f70002005e7aa99102a3f65",
+      "qualified_archive_sha256": "2b2dd9c005c0a332b0948f46efd0a0f999aceb306f70002005e7aa99102a3f65",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-sensor-scope.d.ts",
+      "sha256": "8404ec8ec608e7a855e9235291d2bec06f4a01fe8f041aa11c4169719c6e6692",
+      "qualified_archive_sha256": "8404ec8ec608e7a855e9235291d2bec06f4a01fe8f041aa11c4169719c6e6692",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/shared/helix-environment-sensor-scope.ts",
+      "sha256": "3b69719d6c10f2365bcb8bae508dbed73ff0e9a75fd6a05f25f8da920834d4b9",
+      "qualified_archive_sha256": "3b69719d6c10f2365bcb8bae508dbed73ff0e9a75fd6a05f25f8da920834d4b9",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-source-manifest.d.ts",
+      "sha256": "592168558d37fb60676216966514ab7f98c4124cf0bcb240c7262521f654cb38",
+      "qualified_archive_sha256": "592168558d37fb60676216966514ab7f98c4124cf0bcb240c7262521f654cb38",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/shared/helix-environment-source-manifest.ts",
+      "sha256": "28334cf0e41a59aa5505929b61b91aa5d2ce24ba4162d15fe7767377b600ad78",
+      "qualified_archive_sha256": "28334cf0e41a59aa5505929b61b91aa5d2ce24ba4162d15fe7767377b600ad78",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/shared/helix-environment-state-snapshot.d.ts",
+      "sha256": "f09c7ea3ed8221a3a6c52dcc678dc67256ed8c464a0068393a2ef609b49af710",
+      "qualified_archive_sha256": "f09c7ea3ed8221a3a6c52dcc678dc67256ed8c464a0068393a2ef609b49af710",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/shared/helix-environment-state-snapshot.ts",
+      "sha256": "f09c7ea3ed8221a3a6c52dcc678dc67256ed8c464a0068393a2ef609b49af710",
+      "qualified_archive_sha256": "f09c7ea3ed8221a3a6c52dcc678dc67256ed8c464a0068393a2ef609b49af710",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/contract/v1/index.d.ts",
+      "sha256": "506173b1e69f28dcf101d6d981279afa92b5c0f6341d48de1b8a84b0d4f17224",
+      "qualified_archive_sha256": "506173b1e69f28dcf101d6d981279afa92b5c0f6341d48de1b8a84b0d4f17224",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/sdk/typescript/index.d.ts",
+      "sha256": "b1e7d25de60831c8d3cfb8563c60ed43a7c5740badbc778d606a58648f9faf3c",
+      "qualified_archive_sha256": "b1e7d25de60831c8d3cfb8563c60ed43a7c5740badbc778d606a58648f9faf3c",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/connectors/environment/contract/v1/index.ts",
+      "sha256": "506173b1e69f28dcf101d6d981279afa92b5c0f6341d48de1b8a84b0d4f17224",
+      "qualified_archive_sha256": "506173b1e69f28dcf101d6d981279afa92b5c0f6341d48de1b8a84b0d4f17224",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/connectors/environment/sdk/typescript/index.ts",
+      "sha256": "ae025ca54923a6b5833eee148d8a03df0f4c04ee3c604a5111d812e5c59c9571",
+      "qualified_archive_sha256": "ae025ca54923a6b5833eee148d8a03df0f4c04ee3c604a5111d812e5c59c9571",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "dist/connectors/environment/conformance/mock-helix.d.ts",
+      "sha256": "44b0346dff6f1e888ff357fae2ce5adb922b63385bc10e2d8e6cad720fccee96",
+      "qualified_archive_sha256": "44b0346dff6f1e888ff357fae2ce5adb922b63385bc10e2d8e6cad720fccee96",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "src/connectors/environment/conformance/mock-helix.ts",
+      "sha256": "3c6a7c2ef42b4237af1252f24f9f89b1cf432a2b29974b73f6ac70887837363c",
+      "qualified_archive_sha256": "3c6a7c2ef42b4237af1252f24f9f89b1cf432a2b29974b73f6ac70887837363c",
+      "matches_qualified_archive": true
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "sha256": "79d1e347fc25ce4af4acff68ded75691b0dc8437854ca7b3b13230fb7540a0cc",
+      "qualified_archive_sha256": "79d1e347fc25ce4af4acff68ded75691b0dc8437854ca7b3b13230fb7540a0cc",
+      "matches_qualified_archive": true
+    }
+  ],
+  "reused_validation": {
+    "archive_sha256": "097f869a5693bcd39b092efabda3c8a67835d378c15860d96133cccd30e0f086",
+    "runtime_checks": 10,
+    "schema_checks": 8,
+    "reproduced_compiled_files": 22,
+    "source_addendum": "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+  },
+  "limits": [
+    "Public source and the signed desktop/site are separate release surfaces.",
+    "README qualification notes were updated after the consumer archive; all remaining archive files match exactly.",
+    "No independent-developer onboarding, native pairing or generic action SDK acceptance is claimed.",
+    "Historical preparation notes below are dated evidence; this file supplies the final source commit pin."
+  ]
+}

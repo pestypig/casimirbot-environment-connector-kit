@@ -474,6 +474,7 @@ export type HelixEnvironmentConnectorProbeResult = z.infer<typeof helixEnvironme
 export declare const helixEnvironmentProbeObservationSchema: z.ZodObject<{
     schema: z.ZodLiteral<"helix.environment_connector.probe_observation.v1">;
     probe_request_ref: z.ZodString;
+    environment_binding_ref: z.ZodOptional<z.ZodString>;
     probe_attempt_ref: z.ZodNullable<z.ZodString>;
     capability_id: z.ZodString;
     capability_version: z.ZodNumber;
@@ -514,6 +515,7 @@ export declare const helixEnvironmentProbeObservationSchema: z.ZodObject<{
     eligible_for_current_turn_reentry: boolean;
     late_result_disposition: "late_after_turn_closed" | "late_after_timeout" | "late_after_cancellation" | "late_after_supersession" | null;
     reentry_required: true;
+    environment_binding_ref?: string | undefined;
     observation_revision?: number | undefined;
 }, {
     schema: "helix.environment_connector.probe_observation.v1";
@@ -536,6 +538,7 @@ export declare const helixEnvironmentProbeObservationSchema: z.ZodObject<{
     eligible_for_current_turn_reentry: boolean;
     late_result_disposition: "late_after_turn_closed" | "late_after_timeout" | "late_after_cancellation" | "late_after_supersession" | null;
     reentry_required: true;
+    environment_binding_ref?: string | undefined;
     observation_revision?: number | undefined;
 }>;
 export type HelixEnvironmentProbeObservation = z.infer<typeof helixEnvironmentProbeObservationSchema>;
